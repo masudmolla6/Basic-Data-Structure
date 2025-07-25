@@ -1,20 +1,20 @@
+// problem 01->Vector Initialization & Print
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n;
     cin >> n;
-    cin.ignore();
-    vector<string> v(n);
-
+    vector<int> v(n);
     for (int i = 0; i < n; i++)
     {
-        getline(cin, v[i]);
+        cin >> v[i];
     }
     for (int i = 0; i < n; i++)
     {
-        cout << v[i] << endl;
+        cout << v[i] << " ";
     }
+    
     
     return 0;
 }

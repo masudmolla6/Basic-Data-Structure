@@ -4,29 +4,30 @@ int main()
 {
     int n, q;
     cin >> n >> q;
-    vector<int>v(n);
+    int a[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> v[i];
+        cin >> a[i];
     }
 
-    sort(v.begin(), v.end());
+    sort(a, a+n);
 
     while (q--)
     {
-        int x;
-        cin >> x;
+        int val;
+        cin >> val;
+        int flag=0;
         int l=0;
         int r=n-1;
-        int flag=0;
+
         while (l<=r)
         {
-            int mid=(r+l)/2;
-            if(v[mid]==x){
+            int mid=(l+r)/2;
+            if(a[mid]==val){
                 flag=1;
                 break;
             }
-            else if(v[mid]>x){
+            else if(a[mid]>val){
                 r=mid-1;
             }
             else{
@@ -35,16 +36,13 @@ int main()
         }
 
         if(flag==1){
-            cout << "found" << endl;
+            cout << "Yes" << endl;
         }
         else{
-            cout << "not found" << endl;
+            cout << "No" << endl;
         }
-        
     }
     
-
-
     
     return 0;
 }
