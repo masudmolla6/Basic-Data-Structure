@@ -1,0 +1,1 @@
+{"name":"Local: insert_at_any_position","url":"e:\\Phitron\\Basic Data Structures\\week2-cs-1\\insert_at_any_position.cpp","tests":[{"id":1754547979705,"input":"10 20 30 40 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\Basic Data Structures\\week2-cs-1\\insert_at_any_position.cpp","group":"local","local":true}

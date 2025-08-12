@@ -1,5 +1,7 @@
+
 #include<bits/stdc++.h>
 using namespace std;
+
 class Node{
     public:
         int val;
@@ -12,40 +14,41 @@ class Node{
 
 void insert_at_tail(Node* &head, Node* &tail, int val){
     Node* newNode=new Node(val);
-
     if(head==NULL){
         head=newNode;
         tail=newNode;
-        return;
     }
-
     tail->next=newNode;
-    tail=tail->next;
+    tail=newNode;
+
 }
 
-void printing_linked_list(Node* head){
+void print_linked_list(Node* head){
     Node* temp=head;
-
-    while(temp!=NULL){
+    while (temp!=NULL)
+    {
         cout << temp->val << endl;
         temp=temp->next;
     }
+    
 }
 
 int main()
 {
-    Node* head = new Node(10);
-    Node* a = new Node(20);
-    Node* tail = new Node(30);
+    Node* head=NULL;
+    Node* tail=NULL;
+    int val;
 
-    head->next=a;
-    a->next=tail;
+    while (true)
+    {
+        cin >> val;
+        if(val==-1){
+            break;
+        }
+        insert_at_tail(head, tail, val);
+    }
 
-    insert_at_tail(head,tail, 40);
-    insert_at_tail(head,tail, 50);
-    insert_at_tail(head,tail, 60);
-    printing_linked_list(head);
-    cout << "Tail = " << tail->val << endl;
+    print_linked_list(head);
     
     return 0;
 }
