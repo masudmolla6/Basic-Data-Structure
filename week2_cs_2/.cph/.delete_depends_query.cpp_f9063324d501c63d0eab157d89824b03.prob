@@ -1,0 +1,1 @@
+{"name":"Local: delete_depends_query","url":"e:\\Phitron\\Basic Data Structures\\week2_cs_2\\delete_depends_query.cpp","tests":[{"id":1755185248814,"input":"23 43 65 87 65 -1\n4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\Basic Data Structures\\week2_cs_2\\delete_depends_query.cpp","group":"local","local":true}

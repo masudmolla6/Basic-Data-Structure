@@ -1,0 +1,1 @@
+{"name":"Local: same_or_not","url":"e:\\Phitron\\Basic Data Structures\\week2_cs_2\\same_or_not.cpp","tests":[{"id":1755149263362,"input":"2 1 5 3 4 9 -1\n2 1 5 3 4 9 -1","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\Basic Data Structures\\week2_cs_2\\same_or_not.cpp","group":"local","local":true}
