@@ -21,26 +21,27 @@ void insert_at_tail(Node* &head, Node* &tail, int val){
     tail=newNode;
 }
 
-int max_value(Node* head){
-    while (head==NULL)
-    {
-        return INT_MIN;
-    }
+// int max_value(Node* head){
+//     while (head==NULL)
+//     {
+//         return INT_MIN;
+//     }
     
-    int max_value=INT_MIN;
-    Node* temp=head;
-    while (temp!=NULL)
-    {
-        if(temp->val > max_value){
-            max_value=temp->val;
-        }
-        temp=temp->next;
-    }
+//     int mx=INT_MIN;
+//     Node* temp=head;
+//     while (temp!=NULL)
+//     {
+//         if(temp->val > max_value){
+//             mx=temp->val;
+//         }
+//         temp=temp->next;
+//     }
     
-    return max_value;
-}
+//     return mx;
+// }
+
 int max_value(Node* head){
-    while (head==NULL)
+    if(head==NULL)
     {
         return INT_MIN;
     }

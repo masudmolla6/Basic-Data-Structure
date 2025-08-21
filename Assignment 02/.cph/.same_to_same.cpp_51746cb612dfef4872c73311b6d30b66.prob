@@ -1,0 +1,1 @@
+{"name":"Local: same_to_same","url":"e:\\Phitron\\Basic Data Structures\\Assignment 02\\same_to_same.cpp","tests":[{"id":1755501665580,"input":"10 20 30 40 -1\n10 20 40 -1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\Basic Data Structures\\Assignment 02\\same_to_same.cpp","group":"local","local":true}

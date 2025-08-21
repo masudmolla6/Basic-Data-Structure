@@ -21,6 +21,18 @@ void insert_at_tail(Node* &head, Node* &tail, int val){
 
 }
 
+void size_linked_list(Node* head){
+    Node* temp=head;
+    int count=0;
+
+    while(temp!=NULL){
+        count++;
+        temp=temp->next;
+    }
+
+    cout <<"size"<< count << endl;
+}
+
 void delete_at_tail(Node* &head, Node* &tail, int idx){
     Node* temp=head;
     for (int i = 1; i < idx; i++)
@@ -53,10 +65,11 @@ int main()
         }
         insert_at_tail(head, tail, val);
     }
-    cout << "befor Tail " << tail->val << endl;
-    delete_at_tail(head, tail, 4);
+    // cout << "befor Tail " << tail->val << endl;
+    // delete_at_tail(head, tail, 4);
     print_linked_list(head);
-    cout << "after Tail " << tail->val << endl;
+    size_linked_list(head);
+    // cout << "after Tail " << tail->val << endl;
     
     return 0;
 }
