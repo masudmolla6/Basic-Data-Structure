@@ -24,10 +24,9 @@ void insert_at_tail(Node* &head, Node* &tail, int val){
         tail=newNode;
     }
 }
-void print_linked_list(Node* head){
-    Node* temp=head;
+void print_linked_list(Node* temp){
 
-    if(temp!=NULL){
+    if(temp==NULL){
         return;
     }
 
