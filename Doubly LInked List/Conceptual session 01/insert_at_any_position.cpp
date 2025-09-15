@@ -52,10 +52,12 @@ int list_size(Node* temp){
 }
 
 void insert_at_any_position(Node* head, Node* tail, int idx, int val){
-    Node* newNode=new Node(val);
-    Node* temp=head;
     int size=list_size(head);
-    int count=0;
+    if(idx<0 || idx>size){
+        cout << "Invalid Index" << endl;
+        return;
+    }
+    
     if(idx==0){
         insert_at_head(head, tail, val);
         return;
@@ -65,6 +67,9 @@ void insert_at_any_position(Node* head, Node* tail, int idx, int val){
         return;
     }
 
+    Node* newNode=new Node(val);
+    Node* temp=head;
+    int count=0;
     while(temp!=NULL && count<idx-1){
         count++;
         temp=temp->next;
